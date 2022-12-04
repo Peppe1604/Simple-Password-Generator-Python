@@ -1,15 +1,15 @@
 <a name="Ritorna-sopra"></a>
 
 <br />
-  <h3 align="center">Symple Password Generator </h3>
+  <h3 align="center">Simple Password Generator </h3>
 
   <p align="center">
     Un semplice programma per creare password o pin!
     <br />
-    <a href="https://github.com/Peppe1604/Symple-Password-Generator-Python"><strong>Esplora il progetto »</strong></a>
+    <a href="https://github.com/Peppe1604/Simple-Password-Generator-Python"><strong>Esplora il progetto »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Peppe1604/Symple-Password-Generator-Python/issues">Riporta qui i problemi</a>
+    <a href="https://github.com/Peppe1604/Simple-Password-Generator-Python/issues">Riporta qui i problemi</a>
   </p>
 </div>
 
