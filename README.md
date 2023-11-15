@@ -1,7 +1,7 @@
 <a name="Ritorna-sopra"></a>
 
 <br />
-  <h3 align="center">Simple Password Generator </h3>
+  <h3 align="center" color="red">Simple Password Generator </h3>
 
   <p align="center">
     Un semplice programma per creare password o pin!
