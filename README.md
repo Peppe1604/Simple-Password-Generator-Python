@@ -222,6 +222,6 @@ num=string.digits
 ## Come contattarmi
  Twitter: - [@Peppe16040](https://twitter.com/Peppe16040):exclamation:
 
- Project Link: [https://github.com/Peppe1604/Symple-Password-Generator-Python](https://github.com/Peppe1604/Symple-Password-Generator-Python):exclamation:
+ Project Link: [https://github.com/Peppe1604/Simple-Password-Generator-Python](https://github.com/Peppe1604/Simple-Password-Generator-Python):exclamation:
 
 <p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
