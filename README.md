@@ -1,227 +1,449 @@
-<a name="Ritorna-sopra"></a>
+# 🔐 Password Generator Avanzato
 
-<br />
-  <h3 align="center" color="red">Simple Password Generator </h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.6%2B-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/Version-2.0-orange.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20MacOS-lightgrey.svg" alt="Platform">
+</p>
 
-  <p align="center">
-    Un semplice programma per creare password o pin!
-    <br />
-    <a href="https://github.com/Peppe1604/Simple-Password-Generator-Python"><strong>Esplora il progetto »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Peppe1604/Simple-Password-Generator-Python/issues">Riporta qui i problemi</a>
-  </p>
-</div>
+<p align="center">
+  <strong>Un generatore di password sicuro e user-friendly con interfaccia colorata per il terminale</strong>
+  <br />
+  <em>✨ Ora con installazione automatica per tutte le piattaforme! ✨</em>
+  <br /><br />
+  <a href="#-installazione">Installazione Rapida</a> •
+  <a href="#-demo">Demo</a> •
+  <a href="#-caratteristiche">Caratteristiche</a> •
+  <a href="#-utilizzo">Utilizzo</a> •
+  <a href="#-contribuire">Contribuire</a>
+</p>
 
-<!-- CONTENUTI -->
-<details>
-  <summary>Tabella con Riferimenti</summary>
-  <ol>
-    <li>
-      <a href="#Approposito-del-Progetto">Approposito del Progetto</a>
-           <ul>
-        <li><a href="#Creato-con">Creato con</a></li>
-        </ul>
-    </li>
-    <li>
-      <a href="#Prerequisiti">Prerequisiti</a>
-      <ul>
-        <li><a href="#Tipo-di-uso">Tipo di uso</a></li>
-      </ul>
-    </li>
-    <li><a href="#Librerie">Librerie</a></li>
-       <ul>
-        <li><a href="#Libreria-String">String</a></li>
-         <li><a href="#Libreria-Secrets">Secrets</a></li>
-        <li><a href="#Libreria-Time">Time</a></li>
-        <li><a href="#Libreria-Os">Os</a></li>
-      </ul>
-    <li><a href="#Spiegazione">Spiegazione Codice</a></li>
-    <ul>
-        <li><a href="#Lunghezza-Password">Lunghezza Password</a></li>
-        <li><a href="#Confronti">Confronti</a></li>
-        </ul>
-  </ol>
-</details>
+---
 
+## 🚀 Quick Start
 
- # Approposito del Progetto :bangbang:
+```bash
+# Linux/macOS
+./install.sh
 
-Ciao ho creato questo progetto per uno scopo auto-didattico. Ho iniziato da poco tempo ad usare python e mi sto esercitando nel fare parecchi programmi che potranno (forse) tornare utili. :smile:
+# Windows
+install.bat
+```
 
-Motivi:
-* Anche tu potresti imparare qualcosina da questa mia piccola guida :bulb: 
-* Potresti scaricare il codice e divertirti nel modificarlo come vuoi :hammer:
+---
 
-<p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
+## 📋 Indice
 
-### Creato con
+- [Quick Start](#-quick-start)
+- [Novità v2.0](#-novità-v20)
+- [Demo](#-demo)
+- [Caratteristiche](#-caratteristiche)
+- [Requisiti](#-requisiti)
+- [Installazione](#-installazione)
+- [Utilizzo](#-utilizzo)
+- [Disinstallazione](#️-disinstallazione)
+- [Struttura del Codice](#-struttura-del-codice)
+- [Opzioni Disponibili](#-opzioni-disponibili)
+- [Sicurezza](#-sicurezza)
+- [FAQ](#-faq)
+- [Contribuire](#-contribuire)
+- [Autore](#-autore)
+- [Licenza](#-licenza)
 
-Questo progetto è stato creato con il linguaggio di programmazione Python, mediante L'editor Visual Studio Code
+## 🆕 Novità v2.0
 
-* Python version: 3.12.0a1
+- ✅ **Script di installazione automatica** per tutte le piattaforme
+- ✅ **Interfaccia colorata** con ASCII art e animazioni
+- ✅ **Valutazione sicurezza** in tempo reale con barra visiva
+- ✅ **Password personalizzabili** con selezione interattiva dei caratteri
+- ✅ **Loading animations** durante la generazione
+- ✅ **Box decorativi** per output più leggibile
+- ✅ **Script di disinstallazione** inclusi
 
-<p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
+## 🎬 Demo
 
-# Prerequisiti :bangbang:
+<p align="center">
+  <img src="demo.gif" alt="Demo del Password Generator" width="600">
+</p>
 
-_Qui sotto ti mostro di cosa hai bisogno prima di poter usare al meglio lo script da me pubblicato._
+> *Esempio di generazione di una password sicura con valutazione della forza*
 
-1. Prima di tutto ti serve un editor di testo 
-2. Il download è disponibile per qualsiasi Sistema Operativo
-3. link download: [https://code.visualstudio.com/download](https://code.visualstudio.com/download) :link:
- 
-<p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
+## ✨ Caratteristiche
 
-## Tipo di uso
-Una volta scaricato il tuo Editor di testo (come quello citato sopra) sei pronto per incimentarti nel capire cosa ci è scritto dentro.
-Quando avrai capito potrai farne l'uso che vuoi e sbizzarirti a modificarlo per renderlo migliore. :cyclone:
+### 🎨 Interfaccia Utente
+- **Output colorato**: Interfaccia terminale con colori ANSI per una migliore leggibilità
+- **ASCII Art**: Banner accattivante all'avvio
+- **Animazioni**: Loading animation durante la generazione
+- **Box decorativi**: Output organizzato in box e tabelle
 
-<p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
+### 🔐 Funzionalità di Sicurezza
+- **Generazione crittografica**: Utilizza il modulo `secrets` per una generazione sicura
+- **Valutazione forza**: Analisi in tempo reale della sicurezza della password
+- **Password personalizzabili**: Scegli esattamente quali caratteri includere
+- **Garanzia caratteri**: Le password sicure includono sempre tutti i tipi di caratteri
 
-# Librerie :books:
+### 💾 Gestione Password
+- **Salvataggio opzionale**: Salva le password generate con etichette personalizzate
+- **Log temporale**: Ogni password salvata include data e ora di generazione
+- **File di output**: Tutte le password salvate in `passwords_generate.txt`
 
-_Nell'informatica una libreria è <strong>una raccolta di funzioni e programmi.</strong> Le librerie sono richiamate dai programmi informatici per aggiungere nuove funzionalità al codice e possono essere richiamate anche da programmi differenti._
+### 📦 Installazione e Portabilità
+- **Script di installazione automatica**: Setup con un click per Windows, Linux e macOS
+- **Zero dipendenze**: Usa solo librerie standard Python
+- **Cross-platform**: Funziona su tutti i sistemi operativi
+- **Disinstallazione pulita**: Script di rimozione inclusi
 
-### Libreria String :bookmark:
-Per implementare una libreria nel linguaggio Python basta digitare <strong>import</strong> seguito dal nome della libreria.<br>
-Nel programma troverai: 
+## 🛠️ Requisiti
 
-```Py
-   import = string
-   ``` 
-   <br>
-In Python 3.0. Il modulo string contiene parecchie costanti e classi utili per lavorare con oggetti stringa ed unicode e questa discussione si concentrerà su di essi. 
-Le costanti nel modulo stringa possono essere usate per specificare categorie di caratteri come ascii_letters e digits (lettere ASCII e cifre). <br>
+### Requisiti Minimi
+- **Python**: 3.6 o superiore
+- **Sistema Operativo**: Windows, Linux, macOS
+- **Terminale**: Con supporto colori ANSI (la maggior parte dei terminali moderni)
 
-Nel programma ho richiamato questi parametri nelle variabili <strong>"lett"</strong> e <strong>"num"</strong>
+### Dipendenze
+Il progetto utilizza solo librerie standard Python:
+- `string` - Gestione caratteri
+- `secrets` - Generazione crittografica
+- `time` - Animazioni e timestamp
+- `os` - Operazioni di sistema
+- `sys` - Informazioni sul sistema
+- `datetime` - Gestione date e ore
+
+## 📦 Installazione
+
+### 🚀 Installazione Automatica (Consigliata)
+
+Il progetto include script di installazione automatica per tutte le piattaforme:
+
+#### 🐧 Linux / macOS
+
+```bash
+# 1. Clona il repository
+git clone https://github.com/Peppe1604/Simple-Password-Generator-Python.git
+cd Simple-Password-Generator-Python
+
+# 2. Rendi eseguibile lo script
+chmod +x install.sh
+
+# 3. Esegui l'installazione
+./install.sh
+```
+
+Lo script `install.sh`:
+- ✅ Verifica automaticamente Python
+- ✅ Crea directory di installazione in `~/.local/share/password-generator`
+- ✅ Installa il comando `passgen` nel PATH
+- ✅ Crea script di disinstallazione
+
+#### 🪟 Windows
+
+```batch
+# 1. Clona il repository (o scarica ZIP)
+git clone https://github.com/Peppe1604/Simple-Password-Generator-Python.git
+cd Simple-Password-Generator-Python
+
+# 2. Esegui l'installer (doppio click o da prompt)
+install.bat
+```
+
+Lo script `install.bat`:
+- ✅ Verifica automaticamente Python
+- ✅ Installa in `%LOCALAPPDATA%\PasswordGenerator`
+- ✅ Crea collegamento sul Desktop
+- ✅ Opzione per aggiungere al PATH di sistema
+- ✅ Crea script di disinstallazione
+
+### 📝 Installazione Manuale
+
+Se preferisci installare manualmente:
+
+#### 1. Clona il Repository
+
+```bash
+git clone https://github.com/Peppe1604/Simple-Password-Generator-Python.git
+cd Simple-Password-Generator-Python
+```
+
+#### 2. Verifica Python
+
+```bash
+python --version
+# o
+python3 --version
+```
+
+Assicurati di avere Python 3.6 o superiore.
+
+#### 3. Esegui il Programma
+
+```bash
+python Password_Generator.py
+# o
+python3 Password_Generator.py
+```
+
+## 🚀 Utilizzo
+
+### Avvio Rapido
+
+#### Se hai installato con gli script:
+
+**Linux/macOS:**
+```bash
+# Usa uno di questi comandi da qualsiasi directory
+passgen
+# oppure
+password-generator
+```
+
+**Windows:**
+- Usa il collegamento sul Desktop "Password Generator"
+- Oppure apri il prompt e digita: `passgen`
+
+#### Se usi l'esecuzione manuale:
+
+```bash
+# Dalla directory del progetto
+python Password_Generator.py
+# o
+python3 Password_Generator.py
+```
+
+### Come Usare il Programma
+
+1. **Scegli un'opzione dal menu**
+   - Digita un numero da 1 a 5 per le opzioni
+   - Digita 0 per uscire
+
+2. **Imposta la lunghezza**
+   - Inserisci un numero tra 4 e 128
+
+3. **Ricevi la tua password**
+   - Visualizza la password generata
+   - Controlla la valutazione di sicurezza
+   - Scegli se salvarla
+
+## 🗑️ Disinstallazione
+
+### Linux/macOS
+```bash
+# Se hai installato con install.sh
+~/.local/share/password-generator/uninstall.sh
+```
+
+### Windows
+```batch
+# Se hai installato con install.bat
+# Vai in %LOCALAPPDATA%\PasswordGenerator e esegui:
+uninstall.bat
+
+# Oppure usa Pannello di Controllo → Programmi
+```
+
+### Esempio di Utilizzo
+
+```
+🔐 MENU PRINCIPALE
+──────────────────────────────────────────────────
+  1. 📝 Password solo lettere
+  2. 🔢 PIN solo numeri
+  3. 🔤 Password alfanumerica
+  4. 🛡️  Password sicura (tutti i caratteri)
+  5. ⚙️  Password personalizzata
+  0. 🚪 Esci
+
+👉 Scegli un'opzione: 4
+
+📏 Lunghezza desiderata (4-128): 16
+
+⠏ Generazione password sicura...
+✓ Generazione password sicura completata!
+
+════════════════════════════════════════════════════════════
+║                                                          ║
+║  ✅ PASSWORD SICURA GENERATO CON SUCCESSO!              ║
+║                                                          ║
+════════════════════════════════════════════════════════════
+
+┌────────────────────┐
+│  K9@mP#xL2$nQ7&w  │
+└────────────────────┘
+
+📊 STATISTICHE:
+  • Lunghezza: 16 caratteri
+  • Generata: 15:42:33
+
+🔒 ANALISI SICUREZZA:
+  ✓ Lunghezza ≥ 8
+  ✓ Lunghezza ≥ 12
+  ✓ Contiene minuscole
+  ✓ Contiene maiuscole
+  ✓ Contiene numeri
+  ✓ Contiene simboli
+
+💪 Forza:
+  [████████████████████████████████████████] FORTE
+```
+
+## 📁 Struttura del Codice
+
+### 📂 File del Progetto
+
+```
+Simple-Password-Generator-Python/
+├── Password_Generator.py    # Script principale
+├── README.md               # Documentazione
+├── install.sh              # Installer Linux/macOS
+├── install.bat             # Installer Windows
+└── passwords_generate.txt  # File output (creato dopo primo salvataggio)
+```
+
+### 🏗️ Struttura del Codice Principal
+
+```
+Password_Generator.py
+├── Class Colors          # Definizioni colori ANSI
+├── Class PasswordGenerator
+│   ├── __init__()       # Inizializzazione
+│   ├── clear_screen()   # Pulizia schermo cross-platform
+│   ├── print_colored()  # Stampa testo colorato
+│   ├── print_box()      # Crea box decorativi
+│   ├── print_banner()   # Mostra ASCII art
+│   ├── print_loading()  # Animazione caricamento
+│   ├── get_lunghezza()  # Input validato lunghezza
+│   ├── mostra_menu()    # Menu principale
+│   ├── genera_password_base()     # Generazione base
+│   ├── genera_password_sicura()   # Generazione sicura
+│   ├── genera_password_personalizzata() # Personalizzata
+│   ├── mostra_risultato()  # Output formattato
+│   ├── valuta_sicurezza()  # Analisi sicurezza
+│   ├── salva_password()    # Salvataggio opzionale
+│   └── esegui()           # Loop principale
+└── Main execution
+```
+
+## 🔧 Opzioni Disponibili
+
+### 1. Password Solo Lettere
+- Genera password contenenti solo lettere (maiuscole e minuscole)
+- Ideale per sistemi che non accettano caratteri speciali
+
+### 2. PIN Solo Numeri
+- Genera PIN numerici
+- Perfetto per codici di accesso, carte di credito, etc.
+
+### 3. Password Alfanumerica
+- Combina lettere e numeri
+- Buon compromesso tra sicurezza e compatibilità
+
+### 4. Password Sicura
+- Include lettere, numeri e simboli speciali
+- Garantisce almeno un carattere per ogni tipo
+- Massima sicurezza
+
+### 5. Password Personalizzata
+- Scegli esattamente quali tipi di caratteri includere
+- Controllo completo sulla composizione
+
+## 🔒 Sicurezza
+
+### Criteri di Valutazione
+
+Il generatore valuta la sicurezza basandosi su:
+
+| Criterio | Punti | Descrizione |
+|----------|-------|-------------|
+| Lunghezza ≥ 8 | +1 | Minimo consigliato |
+| Lunghezza ≥ 12 | +1 | Lunghezza ottimale |
+| Lettere minuscole | +1 | Varietà caratteri |
+| Lettere maiuscole | +1 | Maggiore entropia |
+| Numeri | +1 | Complessità aggiuntiva |
+| Simboli speciali | +1 | Massima sicurezza |
+
+### Livelli di Sicurezza
+
+- **🔴 DEBOLE** (0-2 punti): Non consigliata
+- **🟡 MEDIA** (3-4 punti): Accettabile per usi non critici
+- **🟢 FORTE** (5-6 punti): Consigliata per tutti gli usi
+
+## ❓ FAQ
+
+### Il programma è sicuro?
+Sì! Utilizza il modulo `secrets` di Python, progettato specificamente per generazione crittografica sicura.
+
+### Dove vengono salvate le password?
+Nel file `passwords_generate.txt` nella stessa directory del programma. **Nota**: questo file non è criptato!
+
+### Come installo il programma?
+Usa gli script di installazione automatica:
+- **Linux/macOS**: `./install.sh`
+- **Windows**: Doppio click su `install.bat`
+
+### Posso usarlo su Windows?
+Sì! Il programma è cross-platform e funziona su Windows, Linux e macOS. Usa `install.bat` per l'installazione automatica su Windows.
+
+### I colori non funzionano?
+Alcuni terminali potrebbero non supportare i colori ANSI. Il programma funzionerà comunque, solo senza colori. Su Windows 10+ i colori dovrebbero funzionare automaticamente.
+
+### Come disinstallo il programma?
+- **Linux/macOS**: Esegui `~/.local/share/password-generator/uninstall.sh`
+- **Windows**: Esegui `uninstall.bat` dalla cartella di installazione
+
+### Devo installare dipendenze aggiuntive?
+No! Il programma usa solo librerie standard di Python. Non serve pip o installazioni extra.
+
+### Posso modificare i caratteri speciali utilizzati?
+Sì! Modifica la variabile `self.speciali` nella classe `PasswordGenerator`.
+
+### Gli script di installazione sono sicuri?
+Sì! Gli script:
+- Non richiedono privilegi di amministratore (a meno che tu non voglia installare globalmente)
+- Non modificano file di sistema critici
+- Creano sempre uno script di disinstallazione
+- Sono completamente open source e verificabili
+
+## 🤝 Contribuire
+
+Contribuzioni sono sempre benvenute! Ecco come puoi aiutare:
+
+1. **Fork** il progetto
+2. Crea un **branch** per la tua feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** le tue modifiche (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** al branch (`git push origin feature/AmazingFeature`)
+5. Apri una **Pull Request**
+
+### Idee per Contribuzioni
+
+- [ ] Aggiungere supporto multi-lingua
+- [ ] Implementare GUI con tkinter
+- [ ] Aggiungere copia negli appunti
+- [ ] Crittografia del file di output
+- [ ] Generatore di passphrase
+- [ ] Export in formati diversi (JSON, CSV)
+- [ ] Integrazione con password manager
+- [ ] Supporto per profili di password (salvare configurazioni)
+- [ ] Modalità batch per generare multiple password
+- [ ] API REST per integrazione con altri tool
+- [ ] Versione web del generatore
+- [ ] Supporto per password pronounceable
+- [ ] Statistiche di utilizzo e report
+
+## 👨‍💻 Autore
+
+**Giuseppe Maglione**
+
+- GitHub: [@Peppe1604](https://github.com/Peppe1604)
+- Email: [giuseppe.maglione@example.com](mailto:giuseppe.maglione@example.com)
+
+## 📄 Licenza
+
+Questo progetto è distribuito sotto licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
+
+---
+
+<p align="center">
+  Made with ❤️ by Giuseppe Maglione
   <br>
-   
-   ```Py
- lett= string.ascii_letters
-num=string.digits
-   ``` 
-   <br>
-   
-   ### Libreria Secrets :bookmark:
-   _Il modulo secret viene utilizzato per generare numeri casuali crittograficamente forti adatti alla gestione di dati come password, autenticazione dell'account,   token di sicurezza._
-     <br>
-     
-   ```Py
-    import= secrets
-   ``` 
-   <br>
-   
-   Nel programma ho richiamato questi parametri nelle variabili <strong>"Password"</strong> e <strong>"Pin"</strong>, settandoli automaticamente come stringhe
-   <br>
-   
-   ```Py
-    Password="".join(secrets.choice(lett)for i in range(int(lung)))
-    Pin="".join(secrets.choice(num)for i in range(int(lung)))
-   ``` 
-   <br>
-   
-   Per far funzionare nel modo giusto la libreria ha bisogno di precisi parametri, in questo caso ho deciso che la <strong>"Password"</strong> deve contenere unicamente caratteri grazie al richiamo della variabile <strong>"lett"</strong> precedentemente citata, stessa cosa per il <strong>"Pin"</strong> che deve contenere unicamente numeri grazie al richiamo della variabile <strong>"num"</strong> precedentemente citata
-   <br>
-   
-   ### Libreria Time :bookmark:
-  _Il modulo time espone le funzioni della libreria C per manipolare date e tempo._
-       <br>
-     
-   ```Py
-    import= time
-   ``` 
-   <br>
-    Nel programma ho richiamato i parametri della libreria con <strong>"time.sleep()"</strong>, settandoli a seconda delle mie preferenze per far "dormire" il programma per poi continuare nella sua esecuzione
-   <br>
-   
-  ### Libreria Os :bookmark:
-  _Il modulo os permette di compiere diverse operazioni sul S.O. tramite il programma python. Ad esempio, cancellare o rinominare un file, cambiare i permessi in una cartella, trovare l'estensione di un file, il pathname, ecc._
-       <br>
-     
-   ```Py
-    import= os
-   ``` 
-   <br>
-    Nel programma ho utilizzato questa libreria per "sgombrerare" la schermata e renderla più leggibile all'utente grazie all'uso della funzione <strong>os.system('cls')</strong>
-<p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
-    
-   <br>
-   
-   # Spiegazione Codice :unlock:
-   
- _Siamo arrivati alla fine del programma, qui ti spiego come l'utente imposta la lunghezza predefinita della password/pin e a cosa serve il confronto  nella parte finale del programma._
- <br>
- 
- ## Lunghezza Password :mag_right:
-  _Ora ti mostro come l'utente riesce a decidere la lunghezza massima della password/pin che vuole generare:_
-   <br>
-     
-   ```Py
-   lung= input("SCEGLI LA LUNGHEZZA DESIDERATA: ")
-   ``` 
-   <br>
-   Grazie a una variabile chiamata "lung" riusciamo a far impostare una dimensione massima da input all'utente
-   <br>
-   
- ## Confronti :unlock:
-  _In questa ultima parte della spiegazione vedrai come si riesce a confrontare a seconda della scelta dell'utente quale tipo di blocco far eseguire_
-  <br>
-     
-   ```Py
-    scelta= int(input("Clicca 1 Per Generare Una Password, Clicca 2 Per Generare Un Pin : "))
-   ``` 
-   <br>
-   Grazie a una variabile chiamata "scelta" riusciamo a far scegliere all'utente quale blocco di istruzioni far eseguire, e lo verificheremo grazie a un confronto che ti spiegherò qui sotto
-   <br>
-   
-  ### Primo confronto :white_check_mark:
-  Come puoi ben notare ora ti mostro a cosa serve il Primo confronto
-  <br>
-     
-   ```Py
-     if scelta == 1:
-      os.system('cls')
-      print("#####################################") 
-      print("La Password Generata:",Password)
-      print("#####################################")
-   ``` 
-   <br>
-    Con questo confronto, verifico se l'utente che inserisce il numero, che tipologia di password desidera. In questo caso se l'utente invia il numero 1 il programma gli genere una password casuale con lunghezza scelta proprio dall'utente
-       <br>
-       
-### Secondo confronto :white_check_mark:
-  Come puoi ben notare ora ti mostro a cosa serve il Secondo confronto<br>
-     
-   ```Py
-  if scelta== 2:
-     os.system('cls')
-     print("#####################################") 
-     print("Il Pin Generato:",Pin)  
-     print("#####################################")  
-   ``` 
-   <br>
-    Con questo confronto, verifico se l'utente che inserisce il numero, che tipologia di password desidera. In questo caso se l'utente invia il numero 2 il programma gli genere un pin casuale con lunghezza scelta proprio dall'utente
-       <br>
-       
-   ### Terzo confronto :white_check_mark:
-  Come puoi ben notare ora ti mostro a cosa serve il Terzo confronto<br>
-     
-   ```Py
-   if scelta > 2 :
-     os.system('cls')
-     print("##########################################################") 
-     print("HAI INSERITO UN CARATTERE NON VALIDO, RIAVVIA IL PROGRAMMA")
-     print("##########################################################") 
-   ``` 
-   <br>
-    Con questo confronto, verifico se l'utente inserisce un numero maggiore di 2. In questo caso se l'utente invia un numero maggiore di 2 il programma gli genere un messaggio di "errore", perché le decisioni massime che si possono prendere solamente 2 in questo programma, cioè la Password e il Pin.
- <p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
-       <br><br>
-       
-## Come contattarmi
- Twitter: - [@Peppe16040](https://twitter.com/Peppe16040):exclamation:
-
- Project Link: [https://github.com/Peppe1604/Simple-Password-Generator-Python](https://github.com/Peppe1604/Simple-Password-Generator-Python):exclamation:
-
-<p align="right">:arrow_up:(<a href="#Ritorna-sopra">Ritorna Sopra</a>) :arrow_up:</p> 
+  ⭐ Se ti piace questo progetto, lascia una stella su GitHub! ⭐
+</p>
