@@ -1,4 +1,4 @@
-# 🔐 Password Generator Avanzato
+# 🔐 Advanced Password Generator
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.6%2B-blue.svg" alt="Python Version">
@@ -8,15 +8,15 @@
 </p>
 
 <p align="center">
-  <strong>Un generatore di password sicuro e user-friendly con interfaccia colorata per il terminale</strong>
+  <strong>A secure and user-friendly password generator with colorful terminal interface</strong>
   <br />
-  <em>✨ Ora con installazione automatica per tutte le piattaforme! ✨</em>
+  <em>✨ Now with automatic installation for all platforms! ✨</em>
   <br /><br />
-  <a href="#-installazione">Installazione Rapida</a> •
+  <a href="#-installation">Quick Installation</a> •
   <a href="#-demo">Demo</a> •
-  <a href="#-caratteristiche">Caratteristiche</a> •
-  <a href="#-utilizzo">Utilizzo</a> •
-  <a href="#-contribuire">Contribuire</a>
+  <a href="#-features">Features</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-contributing">Contributing</a>
 </p>
 
 ---
@@ -33,236 +33,235 @@ install.bat
 
 ---
 
-## 📋 Indice
+## 📋 Table of Contents
 
 - [Quick Start](#-quick-start)
-- [Novità v2.0](#-novità-v20)
+- [What's New in v2.0](#-whats-new-in-v20)
 - [Demo](#-demo)
-- [Caratteristiche](#-caratteristiche)
-- [Requisiti](#-requisiti)
-- [Installazione](#-installazione)
-- [Utilizzo](#-utilizzo)
-- [Disinstallazione](#️-disinstallazione)
-- [Struttura del Codice](#-struttura-del-codice)
-- [Opzioni Disponibili](#-opzioni-disponibili)
-- [Sicurezza](#-sicurezza)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Uninstallation](#️-uninstallation)
+- [Code Structure](#-code-structure)
+- [Available Options](#-available-options)
+- [Security](#-security)
 - [FAQ](#-faq)
-- [Contribuire](#-contribuire)
-- [Autore](#-autore)
-- [Licenza](#-licenza)
+- [Contributing](#-contributing)
+- [Author](#-author)
+- [License](#-license)
 
-## 🆕 Novità v2.0
+## 🆕 What's New in v2.0
 
-- ✅ **Script di installazione automatica** per tutte le piattaforme
-- ✅ **Interfaccia colorata** con ASCII art e animazioni
-- ✅ **Valutazione sicurezza** in tempo reale con barra visiva
-- ✅ **Password personalizzabili** con selezione interattiva dei caratteri
-- ✅ **Loading animations** durante la generazione
-- ✅ **Box decorativi** per output più leggibile
-- ✅ **Script di disinstallazione** inclusi
+- ✅ **Automatic installation scripts** for all platforms
+- ✅ **Colorful interface** with ASCII art and animations
+- ✅ **Real-time security evaluation** with visual strength bar
+- ✅ **Customizable passwords** with interactive character selection
+- ✅ **Loading animations** during generation
+- ✅ **Decorative boxes** for more readable output
+- ✅ **Uninstallation scripts** included
 
 ## 🎬 Demo
 
 <p align="center">
-  <img src="demo.gif" alt="Demo del Password Generator" width="600">
+  <img src="demo.gif" alt="Password Generator Demo" width="600">
 </p>
 
-> *Esempio di generazione di una password sicura con valutazione della forza*
+> *Example of generating a secure password with strength evaluation*
 
-## ✨ Caratteristiche
+## ✨ Features
 
-### 🎨 Interfaccia Utente
-- **Output colorato**: Interfaccia terminale con colori ANSI per una migliore leggibilità
-- **ASCII Art**: Banner accattivante all'avvio
-- **Animazioni**: Loading animation durante la generazione
-- **Box decorativi**: Output organizzato in box e tabelle
+### 🎨 User Interface
+- **Colorful output**: Terminal interface with ANSI colors for better readability
+- **ASCII Art**: Attractive banner at startup
+- **Animations**: Loading animations during generation
+- **Decorative boxes**: Organized output in boxes and tables
 
-### 🔐 Funzionalità di Sicurezza
-- **Generazione crittografica**: Utilizza il modulo `secrets` per una generazione sicura
-- **Valutazione forza**: Analisi in tempo reale della sicurezza della password
-- **Password personalizzabili**: Scegli esattamente quali caratteri includere
-- **Garanzia caratteri**: Le password sicure includono sempre tutti i tipi di caratteri
+### 🔐 Security Features
+- **Cryptographic generation**: Uses the `secrets` module for secure generation
+- **Strength evaluation**: Real-time password security analysis
+- **Customizable passwords**: Choose exactly which characters to include
+- **Character guarantee**: Secure passwords always include all character types
 
-### 💾 Gestione Password
-- **Salvataggio opzionale**: Salva le password generate con etichette personalizzate
-- **Log temporale**: Ogni password salvata include data e ora di generazione
-- **File di output**: Tutte le password salvate in `passwords_generate.txt`
+### 💾 Password Management
+- **Optional saving**: Save generated passwords with custom labels
+- **Timestamp logging**: Each saved password includes generation date and time
+- **Output file**: All saved passwords in `passwords_generate.txt`
 
-### 📦 Installazione e Portabilità
-- **Script di installazione automatica**: Setup con un click per Windows, Linux e macOS
-- **Zero dipendenze**: Usa solo librerie standard Python
-- **Cross-platform**: Funziona su tutti i sistemi operativi
-- **Disinstallazione pulita**: Script di rimozione inclusi
+### 📦 Installation and Portability
+- **Automatic installation scripts**: One-click setup for Windows, Linux and macOS
+- **Zero dependencies**: Uses only Python standard libraries
+- **Cross-platform**: Works on all operating systems
+- **Clean uninstallation**: Removal scripts included
 
-## 🛠️ Requisiti
+## 🛠️ Requirements
 
-### Requisiti Minimi
-- **Python**: 3.6 o superiore
-- **Sistema Operativo**: Windows, Linux, macOS
-- **Terminale**: Con supporto colori ANSI (la maggior parte dei terminali moderni)
+### Minimum Requirements
+- **Python**: 3.6 or higher
+- **Operating System**: Windows, Linux, macOS
+- **Terminal**: With ANSI color support (most modern terminals)
 
-### Dipendenze
-Il progetto utilizza solo librerie standard Python:
-- `string` - Gestione caratteri
-- `secrets` - Generazione crittografica
-- `time` - Animazioni e timestamp
-- `os` - Operazioni di sistema
-- `sys` - Informazioni sul sistema
-- `datetime` - Gestione date e ore
+### Dependencies
+The project uses only Python standard libraries:
+- `string` - Character handling
+- `secrets` - Cryptographic generation
+- `time` - Animations and timestamps
+- `os` - System operations
+- `sys` - System information
+- `datetime` - Date and time handling
 
-## 📦 Installazione
+## 📦 Installation
 
-### 🚀 Installazione Automatica (Consigliata)
+### 🚀 Automatic Installation (Recommended)
 
-Il progetto include script di installazione automatica per tutte le piattaforme:
+The project includes automatic installation scripts for all platforms:
 
 #### 🐧 Linux / macOS
 
 ```bash
-# 1. Clona il repository
+# 1. Clone the repository
 git clone https://github.com/Peppe1604/Simple-Password-Generator-Python.git
 cd Simple-Password-Generator-Python
 
-# 2. Rendi eseguibile lo script
+# 2. Make the script executable
 chmod +x install.sh
 
-# 3. Esegui l'installazione
+# 3. Run the installation
 ./install.sh
 ```
 
-Lo script `install.sh`:
-- ✅ Verifica automaticamente Python
-- ✅ Crea directory di installazione in `~/.local/share/password-generator`
-- ✅ Installa il comando `passgen` nel PATH
-- ✅ Crea script di disinstallazione
+The `install.sh` script:
+- ✅ Automatically verifies Python
+- ✅ Creates installation directory in `~/.local/share/password-generator`
+- ✅ Installs the `passgen` command in PATH
+- ✅ Creates uninstallation script
 
 #### 🪟 Windows
 
 ```batch
-# 1. Clona il repository (o scarica ZIP)
+# 1. Clone the repository (or download ZIP)
 git clone https://github.com/Peppe1604/Simple-Password-Generator-Python.git
 cd Simple-Password-Generator-Python
 
-# 2. Esegui l'installer (doppio click o da prompt)
+# 2. Run the installer (double click or from prompt)
 install.bat
 ```
 
-Lo script `install.bat`:
-- ✅ Verifica automaticamente Python
-- ✅ Installa in `%LOCALAPPDATA%\PasswordGenerator`
-- ✅ Crea collegamento sul Desktop
-- ✅ Opzione per aggiungere al PATH di sistema
-- ✅ Crea script di disinstallazione
+The `install.bat` script:
+- ✅ Automatically verifies Python
+- ✅ Installs in `%LOCALAPPDATA%\PasswordGenerator`
+- ✅ Creates Desktop shortcut
+- ✅ Option to add to system PATH
+- ✅ Creates uninstallation script
 
-### 📝 Installazione Manuale
+### 📝 Manual Installation
 
-Se preferisci installare manualmente:
+If you prefer manual installation:
 
-#### 1. Clona il Repository
+#### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Peppe1604/Simple-Password-Generator-Python.git
 cd Simple-Password-Generator-Python
 ```
 
-#### 2. Verifica Python
+#### 2. Verify Python
 
 ```bash
 python --version
-# o
+# or
 python3 --version
 ```
 
-Assicurati di avere Python 3.6 o superiore.
+Make sure you have Python 3.6 or higher.
 
-#### 3. Esegui il Programma
+#### 3. Run the Program
 
 ```bash
 python Password_Generator.py
-# o
+# or
 python3 Password_Generator.py
 ```
 
-## 🚀 Utilizzo
+## 🚀 Usage
 
-### Avvio Rapido
+### Quick Start
 
-#### Se hai installato con gli script:
+#### If you installed with scripts:
 
 **Linux/macOS:**
 ```bash
-# Usa uno di questi comandi da qualsiasi directory
+# Use one of these commands from any directory
 passgen
-# oppure
+# or
 password-generator
 ```
 
 **Windows:**
-- Usa il collegamento sul Desktop "Password Generator"
-- Oppure apri il prompt e digita: `passgen`
+- Use the Desktop shortcut "Password Generator"
+- Or open command prompt and type: `passgen`
 
-#### Se usi l'esecuzione manuale:
+#### If using manual execution:
 
 ```bash
-# Dalla directory del progetto
+# From the project directory
 python Password_Generator.py
-# o
+# or
 python3 Password_Generator.py
 ```
 
-### Come Usare il Programma
+### How to Use the Program
 
-1. **Scegli un'opzione dal menu**
-   - Digita un numero da 1 a 5 per le opzioni
-   - Digita 0 per uscire
+1. **Choose an option from the menu**
+   - Type a number from 1 to 5 for options
+   - Type 0 to exit
 
-2. **Imposta la lunghezza**
-   - Inserisci un numero tra 4 e 128
+2. **Set the length**
+   - Enter a number between 4 and 128
 
-3. **Ricevi la tua password**
-   - Visualizza la password generata
-   - Controlla la valutazione di sicurezza
-   - Scegli se salvarla
+3. **Get your password**
+   - View the generated password
+   - Check the security evaluation
+   - Choose whether to save it
 
-## 🗑️ Disinstallazione
+## 🗑️ Uninstallation
 
 ### Linux/macOS
 ```bash
-# Se hai installato con install.sh
+# If you installed with install.sh
 ~/.local/share/password-generator/uninstall.sh
 ```
 
 ### Windows
 ```batch
-# Se hai installato con install.bat
-# Vai in %LOCALAPPDATA%\PasswordGenerator e esegui:
+# If you installed with install.bat
+# Go to %LOCALAPPDATA%\PasswordGenerator and run:
 uninstall.bat
 
-# Oppure usa Pannello di Controllo → Programmi
+# Or use Control Panel → Programs
 ```
 
-### Esempio di Utilizzo
+### Usage Example
 
 ```
-🔐 MENU PRINCIPALE
+🔐 MAIN MENU
 ──────────────────────────────────────────────────
-  1. 📝 Password solo lettere
-  2. 🔢 PIN solo numeri
-  3. 🔤 Password alfanumerica
-  4. 🛡️  Password sicura (tutti i caratteri)
-  5. ⚙️  Password personalizzata
-  0. 🚪 Esci
+  1. 📝 Letters only password
+  2. 🔢 Numbers only PIN
+  3. 🔤 Alphanumeric password
+  4. 🛡️  Secure password (all characters)
+  5. ⚙️  Custom password
+  0. 🚪 Exit
 
-👉 Scegli un'opzione: 4
+👉 Choose an option: 4
 
-📏 Lunghezza desiderata (4-128): 16
+📏 Desired length (4-128): 16
 
-⠏ Generazione password sicura...
-✓ Generazione password sicura completata!
+⠏ Generating secure password...
+✓ Secure password generation completed!
 
 ════════════════════════════════════════════════════════════
 ║                                                          ║
-║  ✅ PASSWORD SICURA GENERATO CON SUCCESSO!              ║
+║  ✅ SECURE PASSWORD GENERATED SUCCESSFULLY!             ║
 ║                                                          ║
 ════════════════════════════════════════════════════════════
 
@@ -270,180 +269,180 @@ uninstall.bat
 │  K9@mP#xL2$nQ7&w  │
 └────────────────────┘
 
-📊 STATISTICHE:
-  • Lunghezza: 16 caratteri
-  • Generata: 15:42:33
+📊 STATISTICS:
+  • Length: 16 characters
+  • Generated: 15:42:33
 
-🔒 ANALISI SICUREZZA:
-  ✓ Lunghezza ≥ 8
-  ✓ Lunghezza ≥ 12
-  ✓ Contiene minuscole
-  ✓ Contiene maiuscole
-  ✓ Contiene numeri
-  ✓ Contiene simboli
+🔒 SECURITY ANALYSIS:
+  ✓ Length ≥ 8
+  ✓ Length ≥ 12
+  ✓ Contains lowercase
+  ✓ Contains uppercase
+  ✓ Contains numbers
+  ✓ Contains symbols
 
-💪 Forza:
-  [████████████████████████████████████████] FORTE
+💪 Strength:
+  [████████████████████████████████████████] STRONG
 ```
 
-## 📁 Struttura del Codice
+## 📁 Code Structure
 
-### 📂 File del Progetto
+### 📂 Project Files
 
 ```
 Simple-Password-Generator-Python/
-├── Password_Generator.py    # Script principale
-├── README.md               # Documentazione
-├── install.sh              # Installer Linux/macOS
-├── install.bat             # Installer Windows
-└── passwords_generate.txt  # File output (creato dopo primo salvataggio)
+├── Password_Generator.py    # Main script
+├── README.md               # Documentation
+├── install.sh              # Linux/macOS installer
+├── install.bat             # Windows installer
+└── passwords_generate.txt  # Output file (created after first save)
 ```
 
-### 🏗️ Struttura del Codice Principal
+### 🏗️ Main Code Structure
 
 ```
 Password_Generator.py
-├── Class Colors          # Definizioni colori ANSI
+├── Class Colors          # ANSI color definitions
 ├── Class PasswordGenerator
-│   ├── __init__()       # Inizializzazione
-│   ├── clear_screen()   # Pulizia schermo cross-platform
-│   ├── print_colored()  # Stampa testo colorato
-│   ├── print_box()      # Crea box decorativi
-│   ├── print_banner()   # Mostra ASCII art
-│   ├── print_loading()  # Animazione caricamento
-│   ├── get_lunghezza()  # Input validato lunghezza
-│   ├── mostra_menu()    # Menu principale
-│   ├── genera_password_base()     # Generazione base
-│   ├── genera_password_sicura()   # Generazione sicura
-│   ├── genera_password_personalizzata() # Personalizzata
-│   ├── mostra_risultato()  # Output formattato
-│   ├── valuta_sicurezza()  # Analisi sicurezza
-│   ├── salva_password()    # Salvataggio opzionale
-│   └── esegui()           # Loop principale
+│   ├── __init__()       # Initialization
+│   ├── clear_screen()   # Cross-platform screen clearing
+│   ├── print_colored()  # Colored text printing
+│   ├── print_box()      # Create decorative boxes
+│   ├── print_banner()   # Show ASCII art
+│   ├── print_loading()  # Loading animation
+│   ├── get_lunghezza()  # Validated length input
+│   ├── mostra_menu()    # Main menu
+│   ├── genera_password_base()     # Basic generation
+│   ├── genera_password_sicura()   # Secure generation
+│   ├── genera_password_personalizzata() # Custom
+│   ├── mostra_risultato()  # Formatted output
+│   ├── valuta_sicurezza()  # Security analysis
+│   ├── salva_password()    # Optional saving
+│   └── esegui()           # Main loop
 └── Main execution
 ```
 
-## 🔧 Opzioni Disponibili
+## 🔧 Available Options
 
-### 1. Password Solo Lettere
-- Genera password contenenti solo lettere (maiuscole e minuscole)
-- Ideale per sistemi che non accettano caratteri speciali
+### 1. Letters Only Password
+- Generates passwords containing only letters (uppercase and lowercase)
+- Ideal for systems that don't accept special characters
 
-### 2. PIN Solo Numeri
-- Genera PIN numerici
-- Perfetto per codici di accesso, carte di credito, etc.
+### 2. Numbers Only PIN
+- Generates numeric PINs
+- Perfect for access codes, credit cards, etc.
 
-### 3. Password Alfanumerica
-- Combina lettere e numeri
-- Buon compromesso tra sicurezza e compatibilità
+### 3. Alphanumeric Password
+- Combines letters and numbers
+- Good compromise between security and compatibility
 
-### 4. Password Sicura
-- Include lettere, numeri e simboli speciali
-- Garantisce almeno un carattere per ogni tipo
-- Massima sicurezza
+### 4. Secure Password
+- Includes letters, numbers and special symbols
+- Guarantees at least one character of each type
+- Maximum security
 
-### 5. Password Personalizzata
-- Scegli esattamente quali tipi di caratteri includere
-- Controllo completo sulla composizione
+### 5. Custom Password
+- Choose exactly which character types to include
+- Complete control over composition
 
-## 🔒 Sicurezza
+## 🔒 Security
 
-### Criteri di Valutazione
+### Evaluation Criteria
 
-Il generatore valuta la sicurezza basandosi su:
+The generator evaluates security based on:
 
-| Criterio | Punti | Descrizione |
-|----------|-------|-------------|
-| Lunghezza ≥ 8 | +1 | Minimo consigliato |
-| Lunghezza ≥ 12 | +1 | Lunghezza ottimale |
-| Lettere minuscole | +1 | Varietà caratteri |
-| Lettere maiuscole | +1 | Maggiore entropia |
-| Numeri | +1 | Complessità aggiuntiva |
-| Simboli speciali | +1 | Massima sicurezza |
+| Criterion | Points | Description |
+|-----------|--------|-------------|
+| Length ≥ 8 | +1 | Recommended minimum |
+| Length ≥ 12 | +1 | Optimal length |
+| Lowercase letters | +1 | Character variety |
+| Uppercase letters | +1 | Greater entropy |
+| Numbers | +1 | Additional complexity |
+| Special symbols | +1 | Maximum security |
 
-### Livelli di Sicurezza
+### Security Levels
 
-- **🔴 DEBOLE** (0-2 punti): Non consigliata
-- **🟡 MEDIA** (3-4 punti): Accettabile per usi non critici
-- **🟢 FORTE** (5-6 punti): Consigliata per tutti gli usi
+- **🔴 WEAK** (0-2 points): Not recommended
+- **🟡 MEDIUM** (3-4 points): Acceptable for non-critical uses
+- **🟢 STRONG** (5-6 points): Recommended for all uses
 
 ## ❓ FAQ
 
-### Il programma è sicuro?
-Sì! Utilizza il modulo `secrets` di Python, progettato specificamente per generazione crittografica sicura.
+### Is the program secure?
+Yes! It uses Python's `secrets` module, designed specifically for secure cryptographic generation.
 
-### Dove vengono salvate le password?
-Nel file `passwords_generate.txt` nella stessa directory del programma. **Nota**: questo file non è criptato!
+### Where are passwords saved?
+In the `passwords_generate.txt` file in the same directory as the program. **Note**: this file is not encrypted!
 
-### Come installo il programma?
-Usa gli script di installazione automatica:
+### How do I install the program?
+Use the automatic installation scripts:
 - **Linux/macOS**: `./install.sh`
-- **Windows**: Doppio click su `install.bat`
+- **Windows**: Double click on `install.bat`
 
-### Posso usarlo su Windows?
-Sì! Il programma è cross-platform e funziona su Windows, Linux e macOS. Usa `install.bat` per l'installazione automatica su Windows.
+### Can I use it on Windows?
+Yes! The program is cross-platform and works on Windows, Linux and macOS. Use `install.bat` for automatic installation on Windows.
 
-### I colori non funzionano?
-Alcuni terminali potrebbero non supportare i colori ANSI. Il programma funzionerà comunque, solo senza colori. Su Windows 10+ i colori dovrebbero funzionare automaticamente.
+### Colors don't work?
+Some terminals might not support ANSI colors. The program will still work, just without colors. On Windows 10+ colors should work automatically.
 
-### Come disinstallo il programma?
-- **Linux/macOS**: Esegui `~/.local/share/password-generator/uninstall.sh`
-- **Windows**: Esegui `uninstall.bat` dalla cartella di installazione
+### How do I uninstall the program?
+- **Linux/macOS**: Run `~/.local/share/password-generator/uninstall.sh`
+- **Windows**: Run `uninstall.bat` from the installation folder
 
-### Devo installare dipendenze aggiuntive?
-No! Il programma usa solo librerie standard di Python. Non serve pip o installazioni extra.
+### Do I need to install additional dependencies?
+No! The program uses only Python standard libraries. No pip or extra installations needed.
 
-### Posso modificare i caratteri speciali utilizzati?
-Sì! Modifica la variabile `self.speciali` nella classe `PasswordGenerator`.
+### Can I modify the special characters used?
+Yes! Modify the `self.speciali` variable in the `PasswordGenerator` class.
 
-### Gli script di installazione sono sicuri?
-Sì! Gli script:
-- Non richiedono privilegi di amministratore (a meno che tu non voglia installare globalmente)
-- Non modificano file di sistema critici
-- Creano sempre uno script di disinstallazione
-- Sono completamente open source e verificabili
+### Are the installation scripts safe?
+Yes! The scripts:
+- Don't require administrator privileges (unless you want to install globally)
+- Don't modify critical system files
+- Always create an uninstallation script
+- Are completely open source and verifiable
 
-## 🤝 Contribuire
+## 🤝 Contributing
 
-Contribuzioni sono sempre benvenute! Ecco come puoi aiutare:
+Contributions are always welcome! Here's how you can help:
 
-1. **Fork** il progetto
-2. Crea un **branch** per la tua feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** le tue modifiche (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** al branch (`git push origin feature/AmazingFeature`)
-5. Apri una **Pull Request**
+1. **Fork** the project
+2. Create a **branch** for your feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. Open a **Pull Request**
 
-### Idee per Contribuzioni
+### Ideas for Contributions
 
-- [ ] Aggiungere supporto multi-lingua
-- [ ] Implementare GUI con tkinter
-- [ ] Aggiungere copia negli appunti
-- [ ] Crittografia del file di output
-- [ ] Generatore di passphrase
-- [ ] Export in formati diversi (JSON, CSV)
-- [ ] Integrazione con password manager
-- [ ] Supporto per profili di password (salvare configurazioni)
-- [ ] Modalità batch per generare multiple password
-- [ ] API REST per integrazione con altri tool
-- [ ] Versione web del generatore
-- [ ] Supporto per password pronounceable
-- [ ] Statistiche di utilizzo e report
+- [ ] Add multi-language support
+- [ ] Implement GUI with tkinter
+- [ ] Add clipboard copy functionality
+- [ ] Output file encryption
+- [ ] Passphrase generator
+- [ ] Export in different formats (JSON, CSV)
+- [ ] Password manager integration
+- [ ] Profile support for password configurations (save settings)
+- [ ] Batch mode for generating multiple passwords
+- [ ] REST API for integration with other tools
+- [ ] Web version of the generator
+- [ ] Support for pronounceable passwords
+- [ ] Usage statistics and reports
 
-## 👨‍💻 Autore
+## 👨‍💻 Author
 
 **Giuseppe Maglione**
 
 - GitHub: [@Peppe1604](https://github.com/Peppe1604)
 - Email: [giuseppe.maglione@example.com](mailto:giuseppe.maglione@example.com)
 
-## 📄 Licenza
+## 📄 License
 
-Questo progetto è distribuito sotto licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
+This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 <p align="center">
   Made with ❤️ by Giuseppe Maglione
   <br>
-  ⭐ Se ti piace questo progetto, lascia una stella su GitHub! ⭐
+  ⭐ If you like this project, leave a star on GitHub! ⭐
 </p>
